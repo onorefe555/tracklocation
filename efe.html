@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>i am learning coding</title>
+    </head>
+    <body  onload="getLocation()">
+        <script>
+            const x = document.getElementById("demo");
+            
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            }
+            
+            function showPosition(position) {
+                const xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "store.php ? lat" +position.coords.latitude + "&long ="+ position.coords.longitude);
+                xhttp.send();
+            }
+            </script>
+        <h1>Topic :Living things</h1>
+        <P>living things are things that have live. There are two types of living things
+            which are :
+        </P>
+        <ul>
+            <li>pLANT </li>
+            <li>Animal</li>
+        </ul>
+        <P><b>Animal :</b> Animal are living things that cannot provide their food. <br> Example are : </P>
+        <ol>
+            <li>Monkey</li>
+            <li>Goat</li>
+            <li>Bird</li>
+            <li>Snake</li>
+        </ol>
+        What is Frontend Development? 
+So, what exactly is front-end development? Front-end development is a 
+part of web development. It refers to the development of interactive 
+and responsive websites. Everything on the internet — Chrome, Gmail, 
+YouTube — is a website. So, everything you see on a website, like links, 
+buttons, images, etc., is the creation of a front-end developer. 
+ Front-end developers code or program websites to meet the client’s 
+needs. 
+ They ensure a hassle-free layout for the users to interact with the 
+web pages. It helps users perform certain functions, like search and 
+navigation. 
+ They ensure a good look and feel of an enjoyable user experience 
+for the website. 
+ Further, they also try to build responsive layouts. It makes web 
+applications look good on all devices, such as desktops, tablets, and 
+mobile phones. 
+How does Frontend Development work? 
+Front-end development refers to creating a user interface and user 
+experience for a website or mobile application. A website contains 
+aspects like its structure, data, design, content, and functionality. 
+Front-end developers create an environment of markup languages,
+    </body>
+</html
